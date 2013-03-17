@@ -2,8 +2,7 @@ call pathogen#infect()
   set nocompatible
   syntax on
   
-  set background=dark
-  colorscheme solarized
+  colorscheme jellybeans
 
   let NERDTreeQuitOnOpen=1
 
