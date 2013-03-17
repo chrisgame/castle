@@ -1,7 +1,8 @@
 call pathogen#infect()
   set nocompatible
   syntax on
-  
+
+  set background=dark  
   colorscheme jellybeans
 
   filetype plugin indent on
