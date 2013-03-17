@@ -33,7 +33,7 @@ call pathogen#infect()
   set statusline+=%{&fileformat}]
   set statusline+=%h%1*%m%r%w%0*
   set statusline+=%=
-  set statusline+=%-14.(%1,%c%V%)\ %<%P
+  set statusline+=%-14.(%1%c%V%)\ %<%P
  
   set title
   
