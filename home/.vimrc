@@ -45,7 +45,6 @@ call pathogen#infect()
   let NERDChristmasTree=1
   let NERDHighlightCursorLine=1
   let NERDTreeShowHidden=1
-  let NERDTreeMapActivateNode='<CR>'
 
 
 
