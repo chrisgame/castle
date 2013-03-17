@@ -46,6 +46,6 @@ call pathogen#infect()
   let NERDHighlightCursorLine=1
   let NERDTreeShowHidden=1
 
-
+  map <C-n> :NERDTreeToggle<CR>
 
 
