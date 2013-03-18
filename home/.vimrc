@@ -4,6 +4,7 @@ call pathogen#infect()
 
   set background=dark  
   colorscheme jellybeans
+  set t_Co=256
 
   filetype plugin indent on
 
