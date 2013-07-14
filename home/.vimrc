@@ -28,8 +28,8 @@ call pathogen#infect()
   set splitbelow        "Split windows at bottom"
 
   set statusline=[%n]\ 
-  set statusline+= %<%.99f\
-  set statusline+= %h%w%m%r%
+  set statusline+=%<%.99f\
+  set statusline+=%h%w%m%r%
   set statusline+={exists('*CapsLockStatusLine')?CapsLockStatusLine():''}
   set statusline+=%y%
   set statusline+={exists('*rails#statusline')?rails#statusline():''}
