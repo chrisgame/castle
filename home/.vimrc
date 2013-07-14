@@ -27,8 +27,8 @@ call pathogen#infect()
   set softtabstop=2
   set splitbelow        "Split windows at bottom"
 
-  set statusline=[%n]\ 
-  set statusline+=%<%.99f\
+  set statusline=[%n]\  
+  set statusline+=%<%.99f\ 
   set statusline+=%h%w%m%r%
   set statusline+={exists('*CapsLockStatusLine')?CapsLockStatusLine():''}
   set statusline+=%y%
