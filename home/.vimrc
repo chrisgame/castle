@@ -27,16 +27,9 @@ call pathogen#infect()
   set softtabstop=2
   set splitbelow        "Split windows at bottom"
 
-  set statusline=[%n]\  
-  set statusline+=%<%.99f\ 
-  set statusline+=%h%w%m%r%
-  set statusline+={exists('*CapsLockStatusLine')?CapsLockStatusLine():''}
-  set statusline+=%y%
-  set statusline+={exists('*rails#statusline')?rails#statusline():''}
-  set statusline+=%{exists('*fugitive#statusline')?fugitive#statusline():''}
-  set statusline+=*%=%-16(\ %l,%c-%v\ %)%P
+  set statusline=[%n]\ %<%.99f\ %h%w%m%r%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%y%{exists('*rails#statusline')?rails#statusline():''}%{exists('*fugitive#statusline')?fugitive#statusline():''}*%=%-16(\ %l,%c-%v\ %)%P
 
-  set tags+=../tags,../../tags,../../../tags, ../../../../tags
+  set tags+=../tags,../../tags,../../../tags
   set timeoutlen=1200  "A little bit more time for macros"
   set ttimeoutlen=50   "Make Esc work faster"
 
