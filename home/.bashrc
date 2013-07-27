@@ -1,5 +1,10 @@
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-source ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+function _update_ps1() {
+  export PS1="$(~/powerline-shell.py $?)"
+}
+
+export PROMPT_COMMAND="_update_ps1"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export TERM=xterm-256color
