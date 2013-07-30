@@ -50,5 +50,8 @@ source $ZSH/oh-my-zsh.sh
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
 # Customize to your needs...
-export PATH=$PATH:/home/user/.rvm/gems/ruby-2.0.0-p0/bin:/home/user/.rvm/gems/ruby-2.0.0-p0@global/bin:/home/user/.rvm/rubies/ruby-2.0.0-p0/bin:/home/user/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/user/.rvm/bin:/home/user/.rvm/bin
+#export PATH=$PATH:/home/user/.rvm/gems/ruby-2.0.0-p0/bin:/home/user/.rvm/gems/ruby-2.0.0-p0@global/bin:/home/user/.rvm/rubies/ruby-2.0.0-p0/bin:/home/user/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/user/.rvm/bin:/home/user/.rvm/bin
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
